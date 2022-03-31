@@ -11718,6 +11718,60 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
+section#forms {
+  background-color: #212529;
+  /* background-image: url("../assets/img/map-image.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#forms .section-heading {
+  color: #fff;
+}
+section#forms form#formsForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#forms form#formsForm .form-group input,
+section#forms form#formsForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#forms form#formsForm .form-group input.form-control {
+  height: auto;
+}
+section#forms form#formsForm .form-group-textarea {
+  height: 100%;
+}
+section#forms form#formsForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#forms form#formsForm p.help-block {
+  margin: 0;
+}
+section#forms form#formsForm .form-control:focus {
+  border-color: #ffc800;
+  box-shadow: none;
+}
+section#forms form#formsForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#forms form#formsForm :-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#forms form#formsForm ::-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#forms form#formsForm :-ms-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
