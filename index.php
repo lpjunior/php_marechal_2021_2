@@ -1,7 +1,4 @@
-<?php 
-    include_once('./php/agency.crud.php'); 
-    include_once('./base_de_dados.php'); 
-?>
+<?php include_once('./php/agency.crud.php'); ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -40,7 +37,7 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas <?= $servico->imagem ?> fa-stack-1x fa-inverse"></i>
+                            <i class="<?= $servico->imagem ?> fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3"><?= $servico->titulo ?></h4>
                         <p class="text-muted"><?= $servico->descricao ?></p>
@@ -85,9 +82,9 @@
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
             <ul class="timeline">
-                <?php foreach(listaAbout() as $indice => $about): ?>
+                <?php foreach(listaSobre() as $indice => $about): ?>
                     <li <?= ($indice % 2 != 0) ? "class=\"timeline-inverted\"" : "" ?>>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/<?= ($indice + 1) ?>.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/<?= $about->imagem ?>" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4><?= $about->data ?></h4>
@@ -122,10 +119,10 @@
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
             <div class="row">
-                <?php foreach(listaTeam() as $indice => $membro): ?>
+                <?php foreach(listaEquipe() as $indice => $membro): ?>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/<?= ($indice + 1) ?>.jpg" alt="..." />
+                        <img class="mx-auto rounded-circle" src="assets/img/team/<?=$membro->imagem ?>" alt="..." />
                         <h4><?=$membro->nome ?></h4>
                         <p class="text-muted"><?=$membro->cargo ?></p>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
